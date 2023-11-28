@@ -1,0 +1,214 @@
+
+.article
+  margin: block-margin 0
+
+.article-inner
+  @extend $block
+  overflow: hidden
+
+.article-meta
+  clearfix()
+
+.article-date
+  color: color-neu-normal-text
+  text-decoration: none
+  margin: 10px 0px
+  font-size: 0.8em
+  float: left
+  &:before
+    content: "\@"
+
+.article-category
+  float: left
+  margin: 10px 10px
+  font-size: 0.8em
+  &:before
+    content: "\# "
+
+.article-category-link
+  color: color-neu-normal-text
+  text-decoration: none
+
+.article-header
+  padding: article-padding article-padding 0
+
+.article-title
+  text-decoration: none
+  font-size: 2em
+  font-weight: bold
+  color: color-neu-normal-text
+  line-height: line-height-title
+  transition: color 0.2s
+  a&:hover
+    color: color-neu-highlight
+
+.article-entry
+  @extend $base-style
+  clearfix()
+  color: color-neu-normal-text
+  padding: 0 article-padding
+  p, table
+    line-height: line-height
+    margin: line-height 0
+  h1, h2, h3, h4, h5, h6
+    font-weight: bold
+    color: color-neu-normal-text
+  h1
+    &::before
+      content: '\# '
+      color: color-neu-highlight
+  h1, h2, h3, h4, h5, h6
+    line-height: line-height-title
+    margin: line-height-title 0
+  a
+    color: color-neu-highlight
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  ul, ol, dl
+    margin-top: line-height
+    margin-bottom: line-height
+  img, video
+    max-width: 100%
+    height: auto
+    display: block
+    margin: auto
+  iframe
+    border: none
+  table
+    width: 100%
+    border-collapse: collapse
+    border-spacing: 0
+  th
+    font-weight: bold
+    border-bottom: 3px solid color-neu-bg-light
+    padding-bottom: 0.5em
+  td
+    border-bottom: 1px solid color-neu-bg-light
+    padding: 10px 5px
+  blockquote
+    font-size: 1em
+    border-left: 5px solid color-neu-highlight
+    padding: 0.01em 1em
+    margin-bottom: 10px
+    background: color-neu-bg-light
+    footer
+      font-size: font-size
+      margin: line-height 0
+      font-family: font-sans
+      cite
+        &:before
+          content: "—"
+          padding: 0 0.5em
+  .pullquote
+    text-align: left
+    width: 45%
+    margin: 0
+    &.left
+      margin-left: 0.5em
+      margin-right: 1em
+    &.right
+      margin-right: 0.5em
+      margin-left: 1em
+  .caption
+    color: color-neu-normal-text
+    display: block
+    font-size: 0.9em
+    margin-top: 0.5em
+    position: relative
+    text-align: center
+  // http://webdesignerwall.com/tutorials/css-elastic-videos
+  .video-container
+    position: relative
+    padding-top: (9 / 16 * 100)% // 16:9 ratio
+    height: 0
+    overflow: hidden
+    iframe, object, embed
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      margin-top: 0
+
+.article-more-link
+  text-align: right
+
+.article-more-link a
+  display: inline-block
+  line-height: 1em
+  text-transform: uppercase
+  padding: 6px 13px
+  transition: 0.2s
+  color: color-neu-normal-text
+  text-decoration: none
+  border-radius: 4px
+  background: color-neu-bg
+  box-shadow: inset 2px 2px 4px color-neu-bg-dark, 
+            inset -2px -2px 4px color-neu-bg
+  &:hover
+    text-decoration: none
+    color: color-neu-highlight
+
+
+.article-footer
+  clearfix()
+  font-size: 0.85em
+  line-height: line-height
+  padding-top: line-height
+
+  margin: 0 article-padding article-padding
+  a
+    color: color-neu-normal-text
+    text-decoration: none
+    &:hover
+      color: color-neu-highlight
+
+.article-tag-list-item
+  float: left
+  margin: 10px 10px
+  font-size: 0.8em
+
+.article-tag-list-link
+  text-decoration: none
+  color: color-neu-normal-text
+  &:before
+    content: "\# "
+
+  
+.fold-button
+  cursor: pointer
+  border:none
+  outline: none
+  font-size: 1.1em
+  width: 100%
+  text-align: left
+  background-color: color-neu-highlight
+  color: color-neu-normal-text
+  padding: 8px
+  margin: 4px 0
+  border-radius: 4px
+  transition: 0.3s
+  &:hover
+    background-color: color-neu-bg-dark
+  &.active
+    background-color: color-neu-highlight
+    color: color-neu-normal-text
+    border-radius: 4px 4px 0 0
+
+.fold-content
+   background-color: color-neu-bg-light
+   color: color-neu-normal-text
+   border-radius: 0 0 4px 4px
+   overflow: hidden
+   opacity: 0
+   max-height: 0
+   transition: 0.3s
+   padding:0 8px
+   margin:0
+   &.show
+    opacity: 1;
+    max-height: 500px;
+    padding:8px;
+    margin:2px 0 4px;
+

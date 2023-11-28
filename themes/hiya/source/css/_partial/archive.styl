@@ -1,0 +1,86 @@
+.archives-wrap
+  margin: block-margin 0
+
+.archives
+  clearfix()
+
+.archive-year-wrap
+  margin-bottom: 1em
+
+.archive-year
+  color: color-neu-normal-text
+  text-decoration: none
+  font-size: 2em
+  font-weight: 500
+  margin-left: 30px
+  border-radius: 8px
+  padding: 5px 10px
+  box-shadow: inset 5px 5px 10px color-neu-bg-dark, 
+            inset -5px -5px 10px color-neu-bg-light
+
+.archive-article-div
+  margin-left: 20px
+
+.archive-article
+  avoid-column-break()
+
+.archive-article-inner
+  padding: 10px
+  margin-bottom: 15px
+
+.archive-article-title
+  text-decoration: none
+  font-weight: bold
+  margin-left: 10px
+  color: color-neu-normal-text
+  transition: color 0.2s
+  line-height: line-height
+  &:hover
+    color: color-neu-highlight
+
+.archive-article-footer
+  margin-top: 1em
+
+.archive-article-date
+  color: color-neu-highlight
+  float: left
+  text-decoration: none
+  font-size: 1em
+  line-height: line-height
+  text-align: center
+  margin-bottom: 0.5em
+  display: block
+
+#page-nav
+  clearfix()
+  margin: block-margin auto
+  background: color-neu-bg
+  box-shadow:  5px 5px 10px color-neu-bg-dark, 
+             -5px -5px 10px color-neu-bg-light
+  border-radius: 3px
+  text-align: center
+  color: color-neu-normal-text
+  overflow: hidden
+  a, span
+    padding: 10px 20px
+    transition: 0.3s
+    line-height: 1
+    height: 2ex
+  a
+    color: color-neu-normal-text
+    text-decoration: none
+    &:hover
+      background: color-neu-highlight
+  .prev
+    float: left
+  .next
+    float: right
+  .page-number
+    display: inline-block
+    @media mq-mobile
+      display: none
+  .current
+    color: color-neu-highlight
+    font-weight: bold
+  .space
+    color: color-neu-bg
