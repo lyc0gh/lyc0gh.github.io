@@ -36,8 +36,8 @@ avator_img: ../img/avator.jpg #头像
 # Valine 评论系统
 valine:
   open: true # true | false 是否打开，默认false
-  appid: IRgwOmjsqWhGE36fyOplv2O1-MdYXbMMI  #Leancloud应用的AppID
-  appkey: UjTx6g2XsnRvkr0i6mgoctJL  #Leancloud应用的AppKey
+  appid: cBfAxO0vRTmyLUCuRGV3zOj4-gzGzoHsz  #Leancloud应用的AppID
+  appkey: gNlee48FSOyu6exqjelGFVS6  #Leancloud应用的AppKey
   verify: false #验证码
   notify: true #评论回复提醒
   avatar: robohash #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
