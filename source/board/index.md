@@ -1,4 +1,4 @@
 ---
 title: 留言板
-date: 2023-11-29 11:16:05
+hidedate: true
 ---

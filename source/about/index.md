@@ -1,6 +1,6 @@
 ---
 title: 关于
-date: 2023-11-28 17:03:08
+hidedate: true
 comments: false
 ---
 
